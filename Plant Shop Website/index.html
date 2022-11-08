@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        height: 110vh;
+        background: url(1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .nav {
+        height: 15%;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    ul li {
+        list-style: none;
+        margin: auto 2%;
+        font-family: 'SF Pro Text';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 100%;
+      
+    }
+       
+
+    .sec-1 {
+        height: 29%;
+        width: 20%;
+        margin: auto;
+        margin-top: 4%;
+        font-family: 'SF Pro Display';
+        text-align: center;
+
+        font-weight: 200;
+        font-size: 25px;
+        text-align: center;
+
+        color: white;
+        background: linear-gradient(180deg, rgba(240, 255, 238, 0.8) 0%, #FFFFFF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+
+        text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+
+
+    }
+
+    .sec-2 {
+
+        height: 13%;
+        width: 25%;
+
+        margin: auto;
+        margin-top: 1%;
+        font-family: sans-serif;
+
+
+        font-size: 18px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.8);
+
+    }
+
+    .sec-3 {
+
+        height: 4%;
+        width: 9%;
+        background-color: black;
+        margin: auto;
+        color: #FFFFFF;
+        font-family: 'SF Pro Text';
+        font-style: normal;
+        font-weight: 500px;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        align-items: center;
+
+        border-radius: 20px;
+        border: 1px solid #FFFFFF;
+        margin-top: 2%;
+
+
+    }
+
+    .div1 {
+        width: 60px;
+        height: 60px;
+
+        background: url(2.png);
+
+
+
+        background-size: cover;
+    }
+
+    .div2 {
+        width: 60px;
+        height: 60px;
+
+        background: url(3.png);
+        background-size: cover;
+
+    }
+
+    .div3 {
+        width: 60px;
+        height: 60px;
+
+        background: url(4.png);
+        background-size: cover;
+
+    }
+
+    .div4 {
+        width: 60px;
+        height: 60px;
+
+        background: url(5.png);
+        background-size: cover;
+
+
+    }
+
+    .sec-4 {
+        width: 36%;
+        margin: auto;
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .container-2 {
+        height: 100vh;
+    }
+
+    .con-1 {
+        height: 7%;
+        width: 12%;
+        background-color: blue;
+        margin: auto;
+        margin-top: 2%;
+        background: #375739;
+
+
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .con-2 {
+
+        text-align: center;
+        color: #B7EAAF;
+        font-family: 'SF Pro Text';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 100%;
+        margin: 2% 0%;
+
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .con-3 {
+
+        height: 10%;
+        width: 24%;
+        font-size: 17px;
+        text-align: center;
+        margin: auto;
+        font-family: 'SF Pro Text';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        color: #000000;
+    }
+
+    .con-4 {
+        text-align: center;
+        font-size: 40px;
+        margin-top: 4%;
+        color: #355342;
+    }
+
+    .con-5 {
+        height: 30%;
+
+
+        margin: 2% 1%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .condiv-1 {
+
+        height: 100%;
+        background: url(13.jpg);
+        background-size: cover;
+        width: 20%;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        color: white;
+        padding: 1%;
+        font-size: 30px;
+
+    }
+
+    .condiv-2 {
+
+        height: 100%;
+        background: url(10.jpg);
+        background-size: cover;
+        width: 20%;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        color: white;
+        padding: 1%;
+        font-size: 30px;
+
+    }
+
+    .condiv-3 {
+
+        height: 100%;
+        background: url(11.jpg);
+        background-size: cover;
+        width: 20%;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        color: white;
+        padding: 1%;
+        font-size: 30px;
+    }
+
+    .condiv-4 {
+
+        height: 100%;
+        background: url(14.jpg);
+        background-size: cover;
+        width: 20%;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        color: white;
+        padding: 1%;
+        font-size: 30px;
+    }
+
+    .polygon {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        left: calc(49% - 87px/2 + 9px);
+        top: 258px;
+
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+
+        background-color: #355342;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .img1 {
+
+        padding: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    a:hover{
+        color:rgb(13, 203, 228);
+    }
+    .decor{
+text-decoration: none;
+color: white;
+cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <ul class="nav">
+            <img src="18.png" alt="logo" class="img1">
+            <li><a href="index2.html" target="_blank" class="decor">Services</a> </li>
+            <li class="decor">Blog</li>
+            <li><a href="index3.html" target="_blank" class="decor"> Shop</a></li>
+            <li><a href="index5.html" target="_blank" class="decor">Location</a> </li>
+            <li style="background-color: #B7EAAF; padding: 0.3%; border-radius: 10px; color: black;">Check out(0)</li>
+        </ul>
+        <div class="sec-1">
+            <h1>Lets Find Your love Places.</h1>
+        </div>
+        <div class="sec-2">
+            <h4>Add some color to your home, give it a little attention, the plants will accompany you quietly</h4>
+
+        </div>
+        <div class="sec-3">Watch The Video</div>
+        <ul class="sec-4">
+            <li class="div1"></li>
+            <li class="div2"></li>
+            <li class="div3"></li>
+            <li class="div4"></li>
+
+        </ul>
+
+
+    </div>
+    <div class="container-2">
+        <div class="con-1">Try Our Services</div>
+        <div class="con-2">Get a beautiful home</div>
+        <div class="con-3">If you don’t know what plants you can add to the space
+            We can provide you with selected plants
+            And configure your space in the text</div>
+        <div class="con-4">4 types of plants</div>
+        <div class="con-5">
+            <div class="condiv-1">
+                <div>Foliage</div>
+                <div style="font-size: 18px;">214 PLANTS</div>
+            </div>
+            <div class="condiv-2">
+                <div>Pucculent</div>
+                <div style="font-size: 18px;">4 PLANTS</div>
+            </div>
+            <div class="condiv-3">
+                <div>Flower</div>
+                <div style="font-size: 18px;">8 PLANTS</div>
+            </div>
+            <div class="condiv-4">
+                <div>Fruit</div>
+                <div style="font-size: 18px;">10 PLANTS</div>
+            </div>
+        </div>
+        <div class="polygon"><img src="17.png" alt="logo" style="width:80% ; height:80%"></div>
+    </div>
+</body>
+
+</html>

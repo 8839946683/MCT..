@@ -72,3 +72,16 @@ async function getNews(category,country){
   newsHead.innerHTML=html;
 }
 getNews("general","in");
+
+
+
+let nightIcon = document.getElementsByClassName('night_icon')[0];
+
+nightIcon.addEventListener("click", () => {
+    document.body.classList.toggle("dark_mode")
+    if (document.body.classList.contains("dark_mode")) {
+        nightIcon.innerHTML = `<i class="uil uil-sun"></i>`
+    } else {
+        nightIcon.innerHTML = `<i class="uil uil-moon"></i>`
+    }
+})
